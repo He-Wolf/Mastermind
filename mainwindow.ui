@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>LOGIDUGI - Main Menu</string>
+   <string>MASTERMIND - Main Menu</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -25,16 +25,16 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButtonHighScores">
+       <widget class="QPushButton" name="pushButtonHallFame">
         <property name="text">
-         <string>High Scores</string>
+         <string>Hall of Fame</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButtonAbout">
+       <widget class="QPushButton" name="pushButtonGameRules">
         <property name="text">
-         <string>About</string>
+         <string>Game Rules</string>
         </property>
        </widget>
       </item>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>HighScores</class>
- <widget class="QDialog" name="HighScores">
+ <class>HallFame</class>
+ <widget class="QDialog" name="HallFame">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>LOGIDUGI - High Scores</string>
+   <string>MASTERMIND - Hall of Fame</string>
   </property>
   <widget class="QLabel" name="labelTop5">
    <property name="geometry">
@@ -39,7 +39,7 @@
     <string>Back</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>160</x>

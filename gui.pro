@@ -25,20 +25,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    hallfame.cpp \
         main.cpp \
         mainwindow.cpp \
-    newgame.cpp \
-    highscores.cpp
+    newgame.cpp
 
 HEADERS += \
+    hallfame.h \
         mainwindow.h \
-    newgame.h \
-    highscores.h
+    newgame.h
 
 FORMS += \
+    hallfame.ui \
         mainwindow.ui \
-    newgame.ui \
-    highscores.ui
+    newgame.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

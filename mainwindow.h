@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <newgame.h>
-#include <highscores.h>
+#include <hallfame.h>
 
 namespace Ui {
 class MainWindow;
@@ -22,14 +22,14 @@ private slots:
 
     void on_pushButtonExit_clicked();
 
-    void on_pushButtonHighScores_clicked();
+    void on_pushButtonHallFame_clicked();
 
-    void on_pushButtonAbout_clicked();
+    void on_pushButtonGameRules_clicked();
 
 private:
     Ui::MainWindow *ui;
     NewGame *windowNewGame;
-    HighScores *windowHighScores;
+    HallFame *windowHallFame;
 };
 
 #endif // MAINWINDOW_H
