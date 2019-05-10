@@ -2,6 +2,7 @@
 #define NEWGAME_H
 
 #include <QDialog>
+#include <gameplay.h>
 
 namespace Ui {
 class NewGame;
@@ -18,8 +19,11 @@ public:
 private slots:
     void on_pushButtonBack_clicked();
 
+    void on_pushButtonStartGame_clicked();
+
 private:
     Ui::NewGame *ui;
+    GamePlay *windowGamePlay;
 };
 
 #endif // NEWGAME_H

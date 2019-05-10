@@ -25,22 +25,28 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    gameplay.cpp \
     hallfame.cpp \
-        main.cpp \
-        mainwindow.cpp \
+    main.cpp \
+    mainwindow.cpp \
     newgame.cpp
 
 HEADERS += \
+    gameplay.h \
     hallfame.h \
-        mainwindow.h \
+    mainwindow.h \
     newgame.h
 
 FORMS += \
+    gameplay.ui \
     hallfame.ui \
-        mainwindow.ui \
+    mainwindow.ui \
     newgame.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resources.qrc

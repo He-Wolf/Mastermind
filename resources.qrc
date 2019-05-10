@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="codeElementEmpty">img/codeElementEmpty.png</file>
+        <file alias="codeElementBlue">img/codeElementBlue.png</file>
+        <file alias="codeElementBrown">img/codeElementBrown.png</file>
+        <file alias="codeElementGreen">img/codeElementGreen.png</file>
+        <file alias="codeElementPink">img/codeElementPink.png</file>
+        <file alias="codeElementRed">img/codeElementRed.png</file>
+        <file alias="codeElementYellow">img/codeElementYellow.png</file>
+        <file alias="feedbackBBBB">img/feedbackBBBB.png</file>
+        <file alias="feedbackBBBE">img/feedbackBBBE.png</file>
+        <file alias="feedbackBBBW">img/feedbackBBBW.png</file>
+        <file alias="feedbackBBEE">img/feedbackBBEE.png</file>
+        <file alias="feedbackBBWE">img/feedbackBBWE.png</file>
+        <file alias="feedbackBBWW">img/feedbackBBWW.png</file>
+        <file alias="feedbackBEEE">img/feedbackBEEE.png</file>
+        <file alias="feedbackBWEE">img/feedbackBWEE.png</file>
+        <file alias="feedbackBWWE">img/feedbackBWWE.png</file>
+        <file alias="feedbackBWWW">img/feedbackBWWW.png</file>
+        <file alias="feedbackEEEE">img/feedbackEEEE.png</file>
+        <file alias="feedbackWEEE">img/feedbackWEEE.png</file>
+        <file alias="feedbackWWEE">img/feedbackWWEE.png</file>
+        <file alias="feedbackWWWE">img/feedbackWWWE.png</file>
+        <file alias="feedbackWWWW">img/feedbackWWWW.png</file>
+    </qresource>
+</RCC>

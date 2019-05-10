@@ -19,3 +19,12 @@ void NewGame::on_pushButtonBack_clicked()
     QWidget *parent=this->parentWidget();
     parent->show();
 }
+
+void NewGame::on_pushButtonStartGame_clicked()
+{
+    hide();
+    windowGamePlay=new GamePlay(this);
+    windowGamePlay->show();
+    windowGamePlay->setDefaultGamePlay();
+    windowGamePlay->setCode();
+}
