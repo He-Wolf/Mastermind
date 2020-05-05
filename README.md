@@ -1,6 +1,6 @@
 # Mastermind
 ## Introduction:
-Repository for my logical game project in Qt.
+This repository contains the source code and built binaries of the logical game called Mastermind. The project uses Qt Open Source libraries. For coding I used Qt Creator as IDE. It was built with MinGW on Windows 10 x64.
 
 ## Game Rules:
 There are two players: the codemaker (computer) and the codebraker (You). The codemaker creates a code and the codebreaker’s aim is to find out this code.
@@ -26,3 +26,5 @@ If you can find out all the colors and their position in not more than 12 steps,
 The latest five codebreaks done in the least steps are stored in the hall of fame table with the player’s name.
 
 Good luck, Codebreaker!
+
+further info: [Wikipedia Page](https://en.wikipedia.org/wiki/Mastermind_(board_game))
