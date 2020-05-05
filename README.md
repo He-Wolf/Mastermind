@@ -28,3 +28,8 @@ The latest five codebreaks done in the least steps are stored in the hall of fam
 Good luck, Codebreaker!
 
 further info: [Wikipedia Page](https://en.wikipedia.org/wiki/Mastermind_(board_game))
+
+## Functions planned, but not implemented yet:
+- to show player's name during code breaking
+- to create a message box when game won and exit to main menu
+- to modify hall of fame table with scores and names
