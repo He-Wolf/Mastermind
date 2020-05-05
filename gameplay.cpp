@@ -171,7 +171,7 @@ void GamePlay::on_pushButtonGuess_pressed()
         break;
     }
 
-    qDebug()<<buttonNumber<<"th button's color is:"<<guessNum[buttonNumber];
+    //qDebug()<<buttonNumber<<"th button's color is:"<<guessNum[buttonNumber];
 }
 
 void GamePlay::setNewRow()
@@ -190,26 +190,7 @@ void GamePlay::setCode()
         codeNum[i]=distribution(*QRandomGenerator::global());
     }
     for (int i=0;i<4;i++) {
-        switch (codeNum[i]) {
-        case 0:
-            code[i]->setPixmap(QPixmap(":/images/codeElementBlue"));
-            break;
-        case 1:
-            code[i]->setPixmap(QPixmap(":/images/codeElementBrown"));
-            break;
-        case 2:
-            code[i]->setPixmap(QPixmap(":/images/codeElementGreen"));
-            break;
-        case 3:
-            code[i]->setPixmap(QPixmap(":/images/codeElementPink"));
-            break;
-        case 4:
-            code[i]->setPixmap(QPixmap(":/images/codeElementRed"));
-            break;
-        case 5:
-            code[i]->setPixmap(QPixmap(":/images/codeElementYellow"));
-            break;
-        }
+    code[i]->setPixmap(QPixmap(":/images/codeElementEmpty"));
     }
 }
 
@@ -309,5 +290,44 @@ void GamePlay::setMarks()
     else if (white==4) {
         marks[actualStep-1]->setPixmap(QPixmap(":/images/feedbackWWWW"));
         marks[actualStep-1]->setVisible(true);
+    }
+}
+
+void GamePlay::keyPressEvent(QKeyEvent *event)
+{
+    if(event->key()==Qt::Key_S && event->modifiers()==Qt::ShiftModifier) {
+        for (int i=0;i<4;i++) {
+            switch (codeNum[i]) {
+            case 0:
+                code[i]->setPixmap(QPixmap(":/images/codeElementBlue"));
+                break;
+            case 1:
+                code[i]->setPixmap(QPixmap(":/images/codeElementBrown"));
+                break;
+            case 2:
+                code[i]->setPixmap(QPixmap(":/images/codeElementGreen"));
+                break;
+            case 3:
+                code[i]->setPixmap(QPixmap(":/images/codeElementPink"));
+                break;
+            case 4:
+                code[i]->setPixmap(QPixmap(":/images/codeElementRed"));
+                break;
+            case 5:
+                code[i]->setPixmap(QPixmap(":/images/codeElementYellow"));
+                break;
+            }
+        }
+        //qDebug()<<"Shift+S presses";
+    }
+}
+
+void GamePlay::keyReleaseEvent(QKeyEvent *event)
+{
+    if(event->key()==Qt::Key_S && event->modifiers()==Qt::ShiftModifier) {
+        for (int i=0;i<4;i++) {
+        code[i]->setPixmap(QPixmap(":/images/codeElementEmpty"));
+        }
+        //qDebug()<<"Shift+S releases";
     }
 }

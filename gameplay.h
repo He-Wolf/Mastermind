@@ -7,6 +7,8 @@
 #include <QIcon>
 #include <QRandomGenerator>
 #include <QDebug>
+#include <QKeyEvent>
+#include <QApplication>
 
 namespace Ui {
 class GamePlay;
@@ -23,6 +25,10 @@ public:
     void setCode();
     void setNewRow();
     void setMarks();
+
+protected:
+    void keyPressEvent(QKeyEvent *);
+    void keyReleaseEvent(QKeyEvent *);
 
 private slots:
     void on_pushButtonBack_clicked();

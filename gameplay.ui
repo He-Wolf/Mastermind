@@ -1963,6 +1963,9 @@
     </property>
    </widget>
    <widget class="QLabel" name="labelCode3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>90</x>
