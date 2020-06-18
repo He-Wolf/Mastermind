@@ -3,7 +3,7 @@
 This repository contains the C++ source code and built binaries of the logical game called Mastermind. The project uses Qt Open Source libraries. For coding I used Qt Creator as IDE. It was built with MinGW on Windows 10 x64.
 
 ## How to run the app:
-You can download the built binaries in the release section of the repository. It can be run on Windows 10 by PCs having x64 architecture processor. URL: [a relative link](/releases)
+You can download the built binaries in the release section of the repository. It can be run on Windows 10 by PCs having x64 architecture processor. [Download release](../../releases)
 
 ## Game Rules:
 There are two players: the codemaker (computer) and the codebraker (You). The codemaker creates a code and the codebreaker’s aim is to find out this code.
